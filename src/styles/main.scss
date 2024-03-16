@@ -1,0 +1,17 @@
+@import "./breakpoints.scss";
+@import "./fonts.scss";
+@import "https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css";
+
+.mobile {
+  @include medium {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @include medium {
+    display: unset;
+  }
+}
