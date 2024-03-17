@@ -9,18 +9,21 @@
         data-target="#nav-items"
         href="#"
         @click="toggleMenu"
-        class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
-        <vue-feather type="menu"></vue-feather>
+        class="flex items-center ml-auto md-hidden teal-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+        <vue-feather type="menu" size="30px"></vue-feather>
       </a>
     </div>
     <div
       id="nav-items"
       class="flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center"
       :class="{ hidden: isMenuHidden }">
-      <a href="#home" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline" v-smooth-scroll>Home</a>
-      <a href="#features" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline" v-smooth-scroll>Features</a>
-      <a href="#pricing" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline" v-smooth-scroll>Pricing</a>
-      <a href="#blog" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline" v-smooth-scroll>Blog</a>
+      <a
+        :href="navItem.href"
+        class="nav-item mx-3 py-3 teal-lighter no-underline hover-underline"
+        v-smooth-scroll
+        v-for="navItem in navItems"
+        >{{ navItem.text }}</a
+      >
     </div>
   </nav>
 </template>
@@ -29,10 +32,21 @@
 import { ref } from "vue";
 
 const isMenuHidden = ref(true);
+const navItems = [
+  { href: "#home", text: "Home" },
+  { href: "#features", text: "Features" },
+  { href: "#about-us", text: "About Us" },
+  { href: "#pricing", text: "Pricing" },
+  { href: "#blog", text: "Blog" },
+];
 
 function toggleMenu() {
   isMenuHidden.value = !isMenuHidden.value;
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.nav-item {
+  font-size: 1rem;
+}
+</style>
