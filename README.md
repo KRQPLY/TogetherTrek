@@ -1,6 +1,6 @@
 # TogetherTrek
 
-This template should help get you started developing with Vue 3 in Vite.
+Feel free to check out here: [CLICK](https://together-trek.netlify.app/)
 
 ## Recommended IDE Setup
 
@@ -27,5 +27,7 @@ npm run dev
 ```sh
 npm run build
 ```
+
 # TogetherTrek
+
 # TogetherTrek
