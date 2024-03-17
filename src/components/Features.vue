@@ -1,5 +1,5 @@
 <template>
-  <section id="features" class="p-10 lg-p-l5">
+  <section id="features" class="px-10 pt-10 lg-px-l5 lg-pt-l5">
     <div class="flex flex-column lg-flex-row mx-auto">
       <div class="w-100pc lg-w-40pc" v-for="service in services">
         <div class="br-8 m-5">
