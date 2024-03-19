@@ -6,7 +6,7 @@
           :href="product.url"
           class="block pointer no-underline p-5 br-8 lg-hover-bg-teal-lightest-10 lg-hover-scale-up-1 ease-300"
           target="_blank">
-          <img class="w-100pc" :alt="product.tite" />
+          <img class="w-100pc" :src="product.img" :alt="product.tite" />
           <p class="fw-600 white fs-m3 mt-3">{{ product.title }}</p>
           <div class="teal-lighter fs-s3 italic after-arrow-right my-4">Try Yourself</div>
         </a>
@@ -16,36 +16,27 @@
 </template>
 
 <script setup>
+import imgFirst from "@/assets/fabrice-villard-Jrl_UQcZqOc-unsplash.jpg";
+import imgSecond from "@/assets/yoann-siloine-dyaxQ-aoGWY-unsplash.jpg";
+import imgThird from "@/assets/florian-klauer-mk7D-4UCfmg-unsplash.jpg";
+
 const products = [
   {
     title: "Evento",
     url: import.meta.env.VITE_COMPANY_URL,
+    img: imgFirst,
   },
   {
     title: "Evento",
     url: import.meta.env.VITE_COMPANY_URL,
+    img: imgSecond,
   },
   {
     title: "Evento",
     url: import.meta.env.VITE_COMPANY_URL,
+    img: imgThird,
   },
 ];
 </script>
 
-<style lang="scss" scoped>
-#products > .products-container {
-  .product {
-    &:first-child img {
-      content: url("../assets/fabrice-villard-Jrl_UQcZqOc-unsplash.jpg");
-    }
-
-    &:nth-child(2) img {
-      content: url("../assets/yoann-siloine-dyaxQ-aoGWY-unsplash.jpg");
-    }
-
-    &:last-child img {
-      content: url("../assets/florian-klauer-mk7D-4UCfmg-unsplash.jpg");
-    }
-  }
-}
-</style>
+<style lang="scss" scoped></style>
