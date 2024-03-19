@@ -36,8 +36,8 @@ const navItems = [
   { href: "#home", text: "Home" },
   { href: "#features", text: "Features" },
   { href: "#about-us", text: "About Us" },
-  { href: "#pricing", text: "Pricing" },
-  { href: "#blog", text: "Blog" },
+  { href: "#products", text: "Products" },
+  { href: "#contact-us", text: "Contact Us" },
 ];
 
 function toggleMenu() {

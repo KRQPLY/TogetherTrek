@@ -6,9 +6,9 @@
         <div class="br-8 mt-10 inline-flex">
           <input
             type="text"
-            class="input-lg half bw-0 fw-200 bg-indigo-lightest-10 backdrop-blur-2 white ph-white focus-white opacity-80 fs-s3 py-5 min-w-25vw br-r-0"
+            class="input-lg half bw-0 fw-200 bg-indigo-lightest-10 backdrop-blur-10 white ph-white focus-white opacity-80 fs-s3 py-5 min-w-25vw br-r-0"
             placeholder="Email Address" />
-          <button class="button-lg bg-indigo-lightest-10 backdrop-blur-2 white focus-white fw-300 fs-s3 mr-0 br-l-0">
+          <button class="button-lg bg-indigo-lightest-10 backdrop-blur-10 white focus-white fw-300 fs-s3 mr-0 br-l-0">
             Get Started
           </button>
         </div>

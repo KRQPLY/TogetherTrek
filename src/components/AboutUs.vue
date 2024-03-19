@@ -37,12 +37,17 @@
       </Swiper>
     </div>
 
+    <div class="p-l2 lg-py-l3 lg-px-l7">
+      <div>
+        <h2 class="white text-center fs-l1 fw-900 lh-1">Our History</h2>
+      </div>
+    </div>
     <div class="flex flex-wrap md-w-90pc mx-auto">
       <div
         class="w-100pc md-w-50pc"
         :class="[index === 2 ? 'md-w-100pc' : 'md-w-50pc']"
         v-for="(historyPart, index) in aboutUsContent.history">
-        <div class="br-8 p-5 m-5 bg-teal-lightest-50 pointer hover-scale-up-1 ease-300">
+        <div class="br-8 p-5 m-5 bg-teal-lightest-50 pointer ease-300">
           <div class="inline-block bg-teal-lightest gray br-3 px-4 py-1 mb-10 fs-s4 uppercase">
             {{ historyPart.year }}
           </div>
@@ -130,7 +135,7 @@ const aboutUsContent = {
 </script>
 
 <style lang="scss" scoped>
-:deep(.swiper-pagination-bullet-active){
-  background-color: #EDF9FA
+:deep(.swiper-pagination-bullet-active) {
+  background-color: #edf9fa;
 }
 </style>
