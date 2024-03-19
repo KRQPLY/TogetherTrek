@@ -7,7 +7,7 @@
     </div>
     <div class="flex flex-wrap md-w-90pc mx-auto">
       <div class="w-100pc md-w-50pc" :class="[index === 2 ? 'md-w-100pc' : 'md-w-50pc']" v-for="(award, index) in awards">
-        <div class="br-8 p-5 m-5 bg-teal-lightest-50 pointer ease-300">
+        <div class="br-8 p-5 m-5 bg-teal-lightest-50 ease-300">
           <div class="inline-block bg-teal-lightest gray br-3 px-4 py-1 mb-10 fs-s4 uppercase">
             {{ award.year }}
           </div>

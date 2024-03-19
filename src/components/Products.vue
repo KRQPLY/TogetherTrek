@@ -4,7 +4,7 @@
       <div class="product w-100pc md-w-33pc p-10 md-p-0 lg-p-10" v-for="product in products">
         <a
           :href="product.url"
-          class="block no-underline p-5 br-8 lg-hover-bg-teal-lightest-10 lg-hover-scale-up-1 ease-300"
+          class="block pointer no-underline p-5 br-8 lg-hover-bg-teal-lightest-10 lg-hover-scale-up-1 ease-300"
           target="_blank">
           <img class="w-100pc" :alt="product.tite" />
           <p class="fw-600 white fs-m3 mt-3">{{ product.title }}</p>
